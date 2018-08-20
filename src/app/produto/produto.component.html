@@ -1,0 +1,11 @@
+<form class="produto-form" #produtoForm="ngForm" > 
+  <div class="form-row">
+    <div class="form-group col-md-12">
+      <label>Nome*</label>
+      <input class="form-control" name="Nome" #Nome="ngModel" 
+        [(ngModel)]="produtoService.selectProduto.Nome" required>
+        
+    </div>    
+    
+  </div>
+</form>
